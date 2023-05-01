@@ -29,6 +29,7 @@ It should look as follows:
                 "WorkingDirectory": "C:\\Path\\To\\WorkingDirectory"
             },
             {
+                "Restart": true,
                 "Path":"C:\\Path\\To\\SimpleExecutable.exe"
             }
         ]
@@ -43,4 +44,5 @@ It should look as follows:
 | `Arguments` | Launch process with extra parameters. Default: none |
 | `KeepOpen` | Leave process running when Neos is getting shut down. Default: `false` |
 | `Path` | The path of the executable file to launch. Required value. |
+| `Restart` | Restart process if it exits while Neos is still running. Default: `false` |
 | `WorkingDirectory` | The directory to execute the file in. Default: The executable's directory. |

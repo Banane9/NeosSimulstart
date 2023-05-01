@@ -22,6 +22,9 @@ namespace Simulstart
         [JsonProperty]
         public string Path { get; private set; }
 
+        [JsonProperty]
+        public bool Restart { get; private set; }
+
         public bool UseWorkingDirectory => !string.IsNullOrWhiteSpace(WorkingDirectory) && WorkingDirectory != System.IO.Path.GetDirectoryName(Path);
 
         [JsonProperty]
